@@ -1,0 +1,3 @@
+#TYPE System.Management.Automation.PSCustomObject
+"url64bit";"checksum64";"checksumType64"
+"https://github.com/blacktop/graboid/releases/download/0.15.3/graboid_0.15.3_win_amd64.zip";"DECE17C7C505D207BC17CABF2B4865E17DA246B5C1E305F9763B7C3BFCB64CE7";"sha256"

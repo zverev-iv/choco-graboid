@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>graboid</id>
+    <version>0.15.3</version>
+    <packageSourceUrl>https://github.com/zverev-iv/choco-graboid</packageSourceUrl>
+    <owners>zverev-iv</owners>
+    <title>graboid</title>
+    <authors>blacktop</authors>
+    <projectUrl>https://github.com/blacktop/graboid</projectUrl>
+    <copyright>2020 blacktop</copyright>
+    <licenseUrl>https://raw.githubusercontent.com/blacktop/graboid/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://github.com/blacktop/graboid/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/blacktop/graboid/issues</bugTrackerUrl>
+    <tags>graboid docker containerd crio kubbernetes image downloader</tags>
+    <summary>ClientLESS Docker Image Downloader</summary>
+    <description>ClientLESS Docker Image Downloader
+
+This project was created for people whom can't install docker on their desktops, but still need to be able to download docker images from Docker Hub and then transfer them to another machine running docker. </description>
+    <releaseNotes>https://github.com/blacktop/graboid/releases</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
