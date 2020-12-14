@@ -4,7 +4,6 @@ branches:
   only:
   - master
 script:
-- powershell -command \".\ci.ps1 -deploy 1\"
+- powershell -command \".\ci.ps1 -build 1\"
 after_script:
-- choco apikey --key $CHOCOAPIKEY --source https://push.chocolatey.org/
-- choco push
+- powershell -command \".\ci.ps1 -deploy 1 -publishKey $CHOCOAPIKEY\"
