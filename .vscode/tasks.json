@@ -4,17 +4,18 @@
         {
             "label": "Build Package",
             "type": "shell",
-            "command": "powershell -command \".\\ci.ps1 -build 1\"",
+            "command": "choco pack \"$((Get-ChildItem .\\*\\*.nuspec).FullName)\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "dependsOn": ["Check Scripts"]
         },
         {
             "label": "Check Scripts",
             "type": "shell",
-            "command": "powershell -command \".\\ci.ps1 -staticAnalysis 1\"",
+            "command": "Invoke-ScriptAnalyzer \"$((Get-ChildItem .\\*\\tools).FullName)\"",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
