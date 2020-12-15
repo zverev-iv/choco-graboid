@@ -4,6 +4,7 @@ branches:
   only:
   - master
 script:
-- powershell -command \".\ci.ps1 -build 1\"
+- choco pack graboid\\graboid.nuspec
 after_script:
-- powershell -command \".\ci.ps1 -deploy 1 -publishKey $CHOCOAPIKEY\"
+- choco apikey --key $CHOCOAPIKEY --source https://push.chocolatey.org/
+- choco push
